@@ -1,6 +1,6 @@
 #include "parser.h"
-#include <iostream>
 #include <cctype>
+#include <iostream>
 
 void Parser::Expr() {
     // expression -> term operator
@@ -19,7 +19,8 @@ void Parser::Expr() {
             std::cout << '-';
         }
         // empty
-        else return;
+        else
+            return;
     }
 }
 
@@ -40,9 +41,7 @@ void Parser::Match(char t) {
     }
 }
 
-Parser::Parser() {
-    lookahead = 0;
-}
+Parser::Parser() { lookahead = 0; }
 
 void Parser::Start() {
     lookahead = std::cin.get();

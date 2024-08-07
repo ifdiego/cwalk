@@ -1,14 +1,14 @@
 class SyntaxError {};
 
 class Parser {
-private:
-    char lookahead;
+    private:
+        char lookahead;
 
-    void Expr();
-    void Term();
-    void Match(char t);
+        void Expr();
+        void Term();
+        void Match(char t);
 
-public:
-    Parser();
-    void Start();
+    public:
+        Parser();
+        void Start();
 };
