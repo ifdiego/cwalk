@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"github.com/ifdiego/cwalk/token"
+	"github.com/ifdiego/monkey/token"
 )
 
 type Lexer struct {
